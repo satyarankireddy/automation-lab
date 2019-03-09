@@ -64,3 +64,63 @@ escape key, :wq! <enter>
 62. git remote -v
 63. git push origin master
 64. git pull origin master
+   94  git push origin master
+   95  git branch
+   96  git branch newfeature
+   97  git branch
+   98  git checkout  feature
+   99  git checkout newfeature
+  100  git branch
+  101  git checkout master
+  102  git checkout -b feature
+  103  git branch
+  104  git checkout newfeature
+  105  clear
+  106  vi newfeature.txt
+  107  git status
+  108  git add newfeature.txt
+  109  git commit -m "Added the newfeature in our code"
+  110  git branch
+  111  git push origin newfeature
+  112  vi newfeature.txt
+  113  git add newfeature.txt
+  114  git commit -m "Added the fullstop"
+  115  git push origin newfeature
+  116  git branch
+  117  git checkout master
+  118  git branch
+  119  git merge newfeature
+  120  ls -ltr
+  121  git branch
+  122  git branch -d feature
+  123  git branch
+  124  cd newfeature.txt
+  125  git checkout newfeature
+  126  vi README.txt
+  127  git pull origin master
+  128  git push origin newfeature
+  129  vi README.txt
+  130  git add README.txt
+  131  git commit -m "modified file"
+  132  git push origin newfeature
+  133  git pull origin newfeature
+  134  vi README.txt
+  135  git status
+  136  git add README.txt
+  137  git commit -m "Added content to readme"
+  138  git push origin newfeature
+  139  touch file1
+  140  touch file2
+  141  touch file3
+  142  git status
+  143  git add file1 file2 file3
+  144  git status
+  145  git stash save "Creating a initial stash"
+  146  git status
+  147  git stash list
+  148  git stash pop
+  149  git stash
+  150  git status
+  151  git stash list
+  152  git stash clear
+  153  git stash list
