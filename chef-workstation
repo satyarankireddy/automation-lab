@@ -1,0 +1,159 @@
+    1  history
+    2  clear
+    3  cat /etc/redhat-release
+    4  clear
+    5  exit
+    6  vi /etc/hosts
+    7  ping chefworkstation.unixcloudfusion.in
+    8  cat /etc/hosts
+    9  clear
+   10  wget https://packages.chef.io/files/stable/chefdk/3.8.14/el/7/chefdk-3.8.14-1.el7.x86_64.rpm
+   11  rpm -ivh chefdk-3.8.14-1.el7.x86_64.rpm
+   12  chef generate repo chef-repo
+   13  pwd
+   14  ls -ltr
+   15  rm -f index.html  binary.class abc.class Remotefile gitcommands newfeature.txt README.txtREADME.txt
+   16  ls -ltr
+   17  rm -f README.txt index.html.1
+   18  ls -ltr
+   19  cd chef-repo/
+   20  git status
+   21  vi .gitignore
+   22  ls -ltra
+   23  history
+   24  ifconfig
+   25  cd /tmp
+   26  wget https://drive.google.com/open?id=1BcvcfxqP2HkWRWaSgd16TyJSZQPdi91z
+   27  ls -ltr
+   28  unzip open\?id\=1BcvcfxqP2HkWRWaSgd16TyJSZQPdi91z
+   29  clear
+   30  wget https://drive.google.com/drive/folders/1ltrTeHleTfVy5vE3bTDhUXfnfLQkKKKZ
+   31  unzip 1ltrTeHleTfVy5vE3bTDhUXfnfLQkKKKZ
+   32  yum install unzip
+   33  unzip 1ltrTeHleTfVy5vE3bTDhUXfnfLQkKKKZ
+   34  ifconfig
+   35  cd
+   36  cd /home/vagrant/
+   37  ls -ltr
+   38  unzip chef-starter\ \(4\).zip
+   39  cd chef-repo/
+   40  cd ..
+   41  ls -ltr
+   42  rm -rf automation/
+   43  cd chef-repo/
+   44  ls -ltr
+   45  ls -ltra
+   46  cd .chef/
+   47  ls -ltr
+   48  cat knife.rb
+   49  cat ankitkumar0308630.pem
+   50  clear
+   51  cd ..
+   52  ls -ltr
+   53  ls -ltra
+   54  pwd
+   55  cd ..
+   56  ls -ltr
+   57  cd chef-repo/
+   58  ls -ltra
+   59  git init
+   60  vi .gitignore
+   61  ls -ltr
+   62  cd cookbooks/
+   63  ls -ltr
+   64  cd ..
+   65  knife cookbook create apache
+   66  chef generate cookbook apache
+   67  ls -ltr
+   68  mv apache/ cookbooks/
+   69  cd cookbooks/
+   70  ls -ltr
+   71  cd apache/
+   72  ls -ltr
+   73  cd recipes/
+   74  ls -ltr
+   75  vi default.rb
+   76  history
+   77  vi default.rb
+   78  pwd
+   79  cd ..
+   80  ls -ltr
+   81  mkdir files
+   82  cd files/
+   83  mkdir default
+   84  cd default/
+   85  vi index.html
+   86  pwd
+   87  cd ../../..
+   88  ls -ltr
+   89  knife cookbook upload apache
+   90  knife bootstrap 192.168.33.12 --sudo -x vagrant -P -N "chefnode1"
+   91  knife bootstrap 192.168.33.12 --sudo -x vagrant -P -N"chefnode1"
+   92  knife bootstrap 192.168.33.12 --sudo -x vagrant -P -N chefnode1
+   93  knife bootstrap 192.168.33.12 --sudo -x vagrant -N chefnode1
+   94  knife node run_list add chefnode1 "recipe[apache]"
+   95  cat apache/recipes/default.rb
+   96  cat ../../chef-repo/cookbooks/apache/files/default/index.html
+   97  knife node list
+   98  knife client list
+   99  knife node show chefnode1
+  100  knife search node "*:*" -a fqdn
+  101  cd apache
+  102  mkdir attributes
+  103  cd attributes/
+  104  vi default.rb
+  105  cd ../files/default/
+  106  ls -ltr
+  107  cp index.html index1.html
+  108  vi index1.html
+  109  cd ../../recipes/
+  110  vi default.rb
+  111  cd ../
+  112  cd ..
+  113  knife cookbook upload apache
+  114  vi apache/attributes/default.rb
+  115  vi apache/recipes/default.rb
+  116  vi apache/recipes/default.rb
+  117  knife cookbook upload apache
+  118  vi apache/attributes/default.rb
+  119  cd apache/files/
+  120  ls -ltr
+  121  cd default/
+  122  ls -ltr
+  123  cp index1.html index2.html
+  124  vi index2.html
+  125  knife cookbook upload apache
+  126  knife cookbook site list
+  127  knife cookbook site download tomcat7
+  128  knife supermarket download tomcat7
+  129  mv tomcat7-0.1.2.tar.gz ../../../../cookbooks/
+  130  cd ../../../../cookbooks/
+  131  ls -ltr
+  132  tar -xvf tomcat7-0.1.2.tar.gz
+  133  cd tomcat7
+  134  ls -ltr
+  135  cat recipes/default.rb
+  136  knife cookbook upload tomcat7
+  137  knife supermarket download java
+  138  mv java-3.2.1.tar.gz ../../cookbooks/
+  139  cd ../../cookbooks/
+  140  ls -ltr
+  141  tar -xvf java-3.2.1.tar.gz
+  142  cd java
+  143  ls -ltr
+  144  knife cookbook upload java
+  145  cd attributes/
+  146  vi default.rb
+  147  cd ..
+  148  cd ..
+  149  knife supermarket download nginx
+  150  unzip nginx-9.0.0.tar.gz
+  151  tar -xvf nginx-9.0.0.tar.gz
+  152  knife cookbook upload nginx
+  153  clear
+  154  cd ..
+  155  ls -ltr
+  156  vi Berksfile
+  157  berks install
+  158  berks upload
+  159  history
